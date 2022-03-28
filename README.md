@@ -1,6 +1,10 @@
 # SLDNS
 SSH OVER DNS create by SL
 
+# SCRIPT SLOWDNS
+# script slowdns
+# Script Slowdns
+# Script SlowDNS
 # Script SSH Over DNS
 SSH Only (Support All SSH Ports)
 # Service Port DNS:
