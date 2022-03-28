@@ -21,6 +21,11 @@ apt install -y mlocate dh-make libaudit-dev build-essential
 apt install -y dos2unix debconf-utils
 service cron reload
 service cron restart
+#sl-fix
+cd /usr/bin
+wget -O sl-fix "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/sslh-fix/sl-fix"
+chmod +x sl-fix
+sl-fix
 cd
 mkdir -m 777 /etc/slowdns
 wget -q -O /etc/slowdns/server.key "https://raw.githubusercontent.com/fisabiliyusri/SLDNS/main/slowdns/server.key"
