@@ -1,7 +1,11 @@
 # SLDNS
 SSH OVER DNS create by SL
-# SlowDNS
-# slowdns
+# INFO Khusus SlowDNS
+• SSH Over DNS (SlowDNS)
+* untuk kecepatan nya di batasi
+* speed download 2,2 Mbps (Max Speed)
+* speed upload 100+ Mbps (Max Speed)
+* Support semua port ssh
 
 # SSH Only (Support All SSH Ports)
 * Service Port DNS:
