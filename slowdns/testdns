@@ -33,6 +33,6 @@ chmod +x /etc/slowdns/sldns-client
 cd
 wget -q -O /etc/systemd/system/client-sldns.service "https://raw.githubusercontent.com/fisabiliyusri/SLDNS/main/slowdns/client-sldns.service"
 wget -q -O /etc/systemd/system/server-sldns.service "https://raw.githubusercontent.com/fisabiliyusri/SLDNS/main/slowdns/server-sldns.service"
-#chmod +x /etc/systemd/system/client-sldns.service
-#chmod +x /etc/systemd/system/server-sldns.service
+chmod +x /etc/systemd/system/client-sldns.service
+chmod +x /etc/systemd/system/server-sldns.service
 cd
