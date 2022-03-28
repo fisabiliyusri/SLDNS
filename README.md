@@ -8,11 +8,12 @@ SSH OVER DNS create by SL
 * Support semua port ssh
 
 # SSH Only (Support All SSH Ports)
-* Service Port DNS:
-* SERVER PORT:
+* Service Port DNS
+
+# SERVER PORT:
 * UDP SERVER 53,5300
 
-# CLIENT PORT
+# CLIENT PORT:
 * UDP DNS 3369,2269
 * DoT 169
 * DoH 99
