@@ -1,0 +1,38 @@
+apt update -y
+apt install -y python3 python3-dnslib net-tools
+apt install ncurses-utils -y
+apt install dnsutils -y
+apt install golang -y
+apt install git -y
+apt install curl -y
+apt install wget -y
+apt install ncurses-utils -y
+apt install screen -y
+apt install cron -y
+apt install iptables -y
+apt install -y git screen whois dropbear wget
+apt install -y pwgen python php jq curl
+apt install -y sudo gnutls-bin
+apt install -y mlocate dh-make libaudit-dev build-essential
+apt install -y dos2unix debconf-utils
+service cron reload
+service cron restart
+service iptables reload
+service iptables restart
+cd
+mkdir -m 777 /etc/slowdns
+wget -q -O /etc/slowdns/server.key "https://raw.githubusercontent.com/fisabiliyusri/SLDNS/main/slowdns/server.key"
+wget -q -O /etc/slowdns/server.pub "https://raw.githubusercontent.com/fisabiliyusri/SLDNS/main/slowdns/server.pub"
+wget -q -O /etc/slowdns/sldns-server "https://raw.githubusercontent.com/fisabiliyusri/SLDNS/main/slowdns/sldns-server"
+wget -q -O /etc/slowdns/sldns-client "https://raw.githubusercontent.com/fisabiliyusri/SLDNS/main/slowdns/sldns-client"
+cd
+chmod +x /etc/slowdns/server.key
+chmod +x /etc/slowdns/server.pub
+chmod +x /etc/slowdns/sldns-server
+chmod +x /etc/slowdns/sldns-client
+cd
+wget -q -O /etc/systemd/system/client-sldns.service "https://raw.githubusercontent.com/fisabiliyusri/SLDNS/main/slowdns/client-sldns.service"
+wget -q -O /etc/systemd/system/server-sldns.service "https://raw.githubusercontent.com/fisabiliyusri/SLDNS/main/slowdns/server-sldns.service"
+#chmod +x /etc/systemd/system/client-sldns.service
+#chmod +x /etc/systemd/system/server-sldns.service
+cd
