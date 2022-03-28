@@ -5,28 +5,17 @@ NC='\e[0m'
 MYIP=$(wget -qO- icanhazip.com);
 apt install jq curl -y
 rm -f /root/domain
-rm -f /etc/v2ray/domain
-rm -f /etc/xray/domain
-rm -rf /etc/xray/domain
 rm -rf /root/nsdomain
 rm nsdomain
-mkdir -p /usr/bin/xray
-mkdir -p /etc/xray
-cp /root/domain /etc/xray/
 
 DOMAIN=zerossl.my.id
 SUB_DOMAIN=${sub}.zerossl.my.id
 NS_DOMAIN=${sub}sldns.zerossl.my.id
 CF_ID=djarumpentol01@gmail.com
 CF_KEY=fef152f86c0cfc3197a097fb3f6ed3ba8a664
-#DOMAIN=akbar-store.me
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
-#SUB_DOMAIN=${sub}.akbar-store.me
-#NS_DOMAIN=sldns${sub}.akbar-store.me
 echo "IP=""$SUB_DOMAIN" >> /var/lib/crot/ipvps.conf
 echo "$NS_DOMAIN" >> /root/nsdomain
-#CF_ID=sandigaming01@gmail.com
-#CF_KEY=3bbac9ca50413bd6b05c1b7989871a077c2c3
 set -euo pipefail
 IP=$(wget -qO- icanhazip.com);
 echo "Updating DNS for ${SUB_DOMAIN}..."
@@ -79,9 +68,5 @@ RESULT=$(curl -sLX PUT "https://api.cloudflare.com/client/v4/zones/${ZONE}/dns_r
      --data '{"type":"NS","name":"'${NS_DOMAIN}'","content":"'${SUB_DOMAIN}'","ttl":120,"proxied":false}')
 echo "Host : $SUB_DOMAIN"
 echo $SUB_DOMAIN > /root/domain
-cp /root/domain /etc/xray/
-echo $SUB_DOMAIN > /etc/v2ray/domain
-echo $SUB_DOMAIN > /etc/xray/domain
-echo $SUB_DOMAIN > /root/domain
-echo $SUB_DOMAIN > /etc/xray/domain
-
+echo "Host NS : $NS_DOMAIN"
+echo $NS_DOMAIN > /root/nsdomain
