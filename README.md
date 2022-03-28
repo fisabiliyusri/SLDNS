@@ -1,14 +1,9 @@
 # SLDNS
 SSH OVER DNS create by SL
 
-# SCRIPT SLOWDNS
-# script slowdns
-# Script Slowdns
-# Script SlowDNS
-# Script SSH Over DNS
-SSH Only (Support All SSH Ports)
-# Service Port DNS:
-# SERVER PORT:
+# SSH Only (Support All SSH Ports)
+* Service Port DNS:
+* SERVER PORT:
 * UDP SERVER 53,5300
 
 # CLIENT PORT
@@ -21,3 +16,9 @@ SSH Only (Support All SSH Ports)
 * UDP DNS
 * DNS-over-TLS (DoT)
 * DNS-over-HTTPS (DoH)
+#
+* SCRIPT SLOWDNS
+* script slowdns
+* Script Slowdns
+* Script SlowDNS
+* Script SSH Over DNS
