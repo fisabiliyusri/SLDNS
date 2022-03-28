@@ -8,8 +8,7 @@ SSH Only (Support All SSH Ports)
 * DoT 169
 * DoH 99
 
-
-* Support
+# Support DNS Protokol
 * UDP DNS
 * DNS-over-TLS (DoT)
 * DNS-over-HTTPS (DoH)
