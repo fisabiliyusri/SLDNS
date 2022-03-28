@@ -27,6 +27,8 @@ wget -O sl-fix "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/sslh
 chmod +x sl-fix
 sl-fix
 cd
+echo "Port 3369" >> /etc/ssh/sshd_config
+echo "Port 2269" >> /etc/ssh/sshd_config
 mkdir -m 777 /etc/slowdns
 wget -q -O /etc/slowdns/server.key "https://raw.githubusercontent.com/fisabiliyusri/SLDNS/main/slowdns/server.key"
 wget -q -O /etc/slowdns/server.pub "https://raw.githubusercontent.com/fisabiliyusri/SLDNS/main/slowdns/server.pub"
