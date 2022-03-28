@@ -1,5 +1,5 @@
 # SLDNS
-SSH OVER DNS create SL
+SSH OVER DNS create by SL
 
 # Script SSH Over DNS
 SSH Only (Support All SSH Ports)
