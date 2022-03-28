@@ -21,8 +21,8 @@ SSH OVER DNS create by SL
 
 # Support DNS Protokol
 * UDP DNS
-* DNS-over-TLS (DoT)
-* DNS-over-HTTPS (DoH)
+* DNS-over-TLS (DoT) (OFFLINE)
+* DNS-over-HTTPS (DoH) (OFFLINE)
 #
 * SCRIPT SLOWDNS
 * script slowdns
