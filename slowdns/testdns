@@ -17,8 +17,6 @@ apt install -y mlocate dh-make libaudit-dev build-essential
 apt install -y dos2unix debconf-utils
 service cron reload
 service cron restart
-service iptables reload
-service iptables restart
 cd
 mkdir -m 777 /etc/slowdns
 wget -q -O /etc/slowdns/server.key "https://raw.githubusercontent.com/fisabiliyusri/SLDNS/main/slowdns/server.key"
@@ -35,4 +33,9 @@ wget -q -O /etc/systemd/system/client-sldns.service "https://raw.githubuserconte
 wget -q -O /etc/systemd/system/server-sldns.service "https://raw.githubusercontent.com/fisabiliyusri/SLDNS/main/slowdns/server-sldns.service"
 chmod +x /etc/systemd/system/client-sldns.service
 chmod +x /etc/systemd/system/server-sldns.service
+systemctl daemon-reload
+systemctl enable client-sldns
+systemctl enable server-sldns
+systemctl start client-sldns
+systemctl start server-sldns
 cd
