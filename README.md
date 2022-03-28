@@ -1,5 +1,7 @@
 # SLDNS
 SSH OVER DNS create by SL
+# SlowDNS
+# slowdns
 
 # SSH Only (Support All SSH Ports)
 * Service Port DNS:
