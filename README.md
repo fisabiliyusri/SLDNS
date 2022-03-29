@@ -1,5 +1,13 @@
 # SLDNS
 SSH OVER DNS create by SL
+* Link Script Repo SlowDNS dari Sulaiman L
+```html
+https://github.com/fisabiliyusri/SLDNS
+```
+# INFO
+* INI SCRIPT BERSIFAT GRATIS DAN INI SCRIPT DI LARANG DI JUAL PERBELIKAN
+* Ini Script bisa di Mod/Modifikasi/edit dengan bebas
+
 # INFO Khusus SlowDNS
 • SSH Over DNS (SlowDNS)
 * untuk kecepatan nya di batasi
