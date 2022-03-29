@@ -8,12 +8,13 @@ rm -f /root/domain
 rm -rf /root/nsdomain
 rm nsdomain
 
+sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
+subsl=$(</dev/urandom tr -dc a-x0-9 | head -c4)
 DOMAIN=zerossl.my.id
 SUB_DOMAIN=${sub}.zerossl.my.id
-NS_DOMAIN=${sub}sldns.zerossl.my.id
+NS_DOMAIN=${subsl}.zerossl.my.id
 CF_ID=djarumpentol01@gmail.com
 CF_KEY=fef152f86c0cfc3197a097fb3f6ed3ba8a664
-sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
 echo "IP=""$SUB_DOMAIN" >> /var/lib/crot/ipvps.conf
 echo "$NS_DOMAIN" >> /root/nsdomain
 set -euo pipefail
