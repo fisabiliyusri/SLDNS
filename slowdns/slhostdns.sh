@@ -4,7 +4,6 @@ green='\e[0;32m'
 NC='\e[0m'
 MYIP=$(wget -qO- icanhazip.com);
 apt install jq curl -y
-rm -f /root/domain
 rm -rf /root/nsdomain
 rm nsdomain
 
@@ -15,7 +14,7 @@ SUB_DOMAIN=${sub}.zerossl.my.id
 NS_DOMAIN=${subsl}.zerossl.my.id
 CF_ID=djarumpentol01@gmail.com
 CF_KEY=fef152f86c0cfc3197a097fb3f6ed3ba8a664
-echo "IP=""$SUB_DOMAIN" >> /var/lib/crot/ipvps.conf
+echo "IP=""$SUB_DOMAIN" >> /var/lib/crot/subdomain.conf
 echo "$NS_DOMAIN" >> /root/nsdomain
 set -euo pipefail
 IP=$(wget -qO- icanhazip.com);
@@ -68,6 +67,6 @@ RESULT=$(curl -sLX PUT "https://api.cloudflare.com/client/v4/zones/${ZONE}/dns_r
      -H "Content-Type: application/json" \
      --data '{"type":"NS","name":"'${NS_DOMAIN}'","content":"'${SUB_DOMAIN}'","ttl":120,"proxied":false}')
 echo "Host : $SUB_DOMAIN"
-echo $SUB_DOMAIN > /root/domain
+echo $SUB_DOMAIN > /root/subdomain
 echo "Host NS : $NS_DOMAIN"
 echo $NS_DOMAIN > /root/nsdomain
