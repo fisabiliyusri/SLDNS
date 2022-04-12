@@ -9,11 +9,16 @@ rm nsdomain
 
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
 subsl=$(</dev/urandom tr -dc a-x0-9 | head -c4)
-DOMAIN=zerossl.my.id
-SUB_DOMAIN=${sub}.zerossl.my.id
-NS_DOMAIN=${subsl}.zerossl.my.id
-CF_ID=djarumpentol01@gmail.com
-CF_KEY=fef152f86c0cfc3197a097fb3f6ed3ba8a664
+DOMAIN=slxray.cf
+SUB_DOMAIN=${sub}.me.slxray.cf
+NS_DOMAIN=${subsl}.me.slxray.cf
+CF_ID=slinfinity69@gmail.com
+CF_KEY=38872d037a1af918745324439a7b9649f412d
+#DOMAIN=zerossl.my.id
+#SUB_DOMAIN=${sub}.zerossl.my.id
+#NS_DOMAIN=${subsl}.zerossl.my.id
+#CF_ID=djarumpentol01@gmail.com
+#CF_KEY=fef152f86c0cfc3197a097fb3f6ed3ba8a664
 echo "IP=""$SUB_DOMAIN" >> /var/lib/crot/subdomain.conf
 echo "$NS_DOMAIN" >> /root/nsdomain
 set -euo pipefail
