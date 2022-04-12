@@ -9,11 +9,11 @@ rm nsdomain
 
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
 subsl=$(</dev/urandom tr -dc a-x0-9 | head -c4)
-DOMAIN=slxray.cf
-SUB_DOMAIN=${sub}.me.slxray.cf
-NS_DOMAIN=${subsl}.me.slxray.cf
-CF_ID=slinfinity69@gmail.com
-CF_KEY=38872d037a1af918745324439a7b9649f412d
+DOMAIN=autosc.me
+SUB_DOMAIN=${sub}.autosc.me
+NS_DOMAIN=${subsl}.autosc.me
+CF_ID=awaledyan@gmail.com
+CF_KEY=7c9a592ee3186932780cffb3f1b6dbfee8084
 #DOMAIN=zerossl.my.id
 #SUB_DOMAIN=${sub}.zerossl.my.id
 #NS_DOMAIN=${subsl}.zerossl.my.id
