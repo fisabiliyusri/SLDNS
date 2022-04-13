@@ -7,8 +7,8 @@ apt install jq curl -y
 rm -rf /root/nsdomain
 rm nsdomain
 
-sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
-subsl=$(</dev/urandom tr -dc a-x0-9 | head -c4)
+sub=$(</dev/urandom tr -dc a-z0-9 | head -c5)
+subsl=$(</dev/urandom tr -dc a-x0-9 | head -c5)
 DOMAIN=autosc.me
 SUB_DOMAIN=vpn-${sub}.autosc.me
 NS_DOMAIN=ns-${subsl}.autosc.me
