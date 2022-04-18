@@ -9,16 +9,11 @@ rm nsdomain
 
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c5)
 subsl=$(</dev/urandom tr -dc a-x0-9 | head -c5)
-DOMAIN=autosc.me
-SUB_DOMAIN=vpn-${sub}.autosc.me
-NS_DOMAIN=ns-${subsl}.autosc.me
-CF_ID=awaledyan@gmail.com
-CF_KEY=7c9a592ee3186932780cffb3f1b6dbfee8084
-#DOMAIN=zerossl.my.id
-#SUB_DOMAIN=${sub}.zerossl.my.id
-#NS_DOMAIN=${subsl}.zerossl.my.id
-#CF_ID=djarumpentol01@gmail.com
-#CF_KEY=fef152f86c0cfc3197a097fb3f6ed3ba8a664
+DOMAIN=mdxcloud.net
+SUB_DOMAIN=vpn-${sub}.mdxcloud.net
+NS_DOMAIN=ns-${subsl}.mdxcloud.net
+CF_ID=wapres.area82@gmail.com
+CF_KEY=13ff9e1224988985f0834a25e59efad433d85
 echo "IP=""$SUB_DOMAIN" >> /var/lib/crot/subdomain.conf
 echo "$NS_DOMAIN" >> /root/nsdomain
 set -euo pipefail
