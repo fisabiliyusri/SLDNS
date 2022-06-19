@@ -6,7 +6,7 @@ MYIP=$(wget -qO- icanhazip.com);
 apt install jq curl -y
 rm -rf /root/nsdomain
 rm nsdomain
-
+cd
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c5)
 subsl=$(</dev/urandom tr -dc a-x0-9 | head -c5)
 DOMAIN=mantapxsl.my.id
